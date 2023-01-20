@@ -135,6 +135,10 @@ main .container-form{
 
 }
 
+.container-img .icon{
+    color: var(--secondary-color);
+}
+
 .features-description h3{
     font-size: 1.8rem;
 }
@@ -170,13 +174,12 @@ iframe{
 
 .pricing::-webkit-scrollbar{
     background-color: rgba(241, 196, 14, 0.2);
-    /* background-color: rgba(255, 140, 0, 0.3); */
-
-    height: 5px;
+    background-color: rgba(255, 140, 0, 0.3);
+    height: 4px;
 }
 .pricing::-webkit-scrollbar-thumb{
     border: solid var(--primary-color);
-    /* border: solid var(--secondary-color); */
+    border: solid var(--secondary-color);
     border-radius: 50px;
 }
 
@@ -241,13 +244,13 @@ iframe{
 }
 .container-footer li a{
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: black;
 }
 .container-footer p{
     text-align: end;
     color: #444;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 @media (min-width: 500px) {
