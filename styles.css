@@ -43,8 +43,8 @@ body{
 }
 
 .container-header img{
-    width: 220px;
-    /* width: 60vw; */
+    max-width: 60vw;
+    min-width: 220px;
 
 }
 
@@ -94,6 +94,11 @@ main .container-form{
 
 
 .container-form input[type="email"]{
+    width: 80%;
+    min-width: 280px;
+    max-width: 370px;
+    margin: 0 auto;
+    text-align: center;
     padding: 3px;
     border: solid 1px black;
     border: solid 1px var(--secondary-color);
@@ -103,6 +108,7 @@ main .container-form{
 }
 
 .container-form input[type="submit"]{
+    max-width: 130px;
     width: 40%;
     margin: 0 auto;
     margin-top: 10px;
@@ -116,6 +122,7 @@ main .container-form{
 
 .container-feateures{
     margin: 0 20px;
+    margin-top: 40px;
 }
 
 .features{
@@ -151,19 +158,23 @@ main .container-form{
     display: flex;
     justify-content: center;
     margin: 0 20px;
-    margin-top: 30px;
+    margin-top: 40px;
     
 }
 
 iframe{
-    width: 80vw;
+    width: 70vw;
+    height: 50vw;
+    min-width: 280px;
+    max-width: 600px;
+    max-height: 400px;
     border: none;
     box-shadow: 0px 4px 8px rgb(89 73 30 / 16%);
     
 }
 
 .pricing{
-    margin-top: 30px;
+    margin-top: 40px;
     margin-bottom: 20px;
     display: flex;
     overflow-x: scroll;
@@ -186,6 +197,7 @@ iframe{
 .container-card{
     position: relative;
     width: 70%;
+    height: 270px;
     min-width: 230px;
     margin: 0 50px;
     margin-bottom: 15px;
@@ -198,7 +210,7 @@ iframe{
 
 .container-card h4{
     font-size: 1.3rem;
-    padding: 10px;
+    padding: 15px;
     background-color: var(--secondary-background-color);
     margin-bottom: 10px;
     border-start-start-radius: 20px;
@@ -208,10 +220,12 @@ iframe{
 .container-card p{
     font-weight: bold;
     font-size: 2rem;
+    margin: 15px 0;
 }
 
 .container-card li{
     list-style: none;
+    margin: 18px 0;
 }
 
 .container-card ul{
@@ -223,8 +237,7 @@ iframe{
     background-color: var(--primary-color);
     border: none;
     padding: 5px;
-    margin-top: 16px;
-    margin-bottom: 12px;
+    margin-bottom: 20px;
     font-weight: bold;
     border-radius: 10px;
     font-size: 1.4rem;
@@ -232,7 +245,7 @@ iframe{
 
 .container-footer{
     background-color: var(--secondary-background-color);
-    padding: 15px;
+    padding: 20px;
 }
 .container-footer ul{
     display: flex;
@@ -254,8 +267,117 @@ iframe{
 }
 
 @media (min-width: 500px) {
+    header{
+        height: 75px;
+    }
+    .container-header img{
+        width: 85vw;
+        max-width: 330px;
+        margin-left: 20px;
+    }
     .container-nav ul{
+        /* width: ; */
         flex-direction: row;
         justify-content: space-evenly;
+    }
+
+    .fa-fire:before, .fa-truck:before, .fa-battery-full:before{
+        font-size: 4rem;
+    }
+
+
+}
+
+
+@media (min-width: 700px) {
+    .features{
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .features-description{
+        max-width: 800px;
+        width: 80vw;
+    }
+    .container-footer li a{
+        font-size: 1.4rem;
+    }
+    .container-footer p{
+        font-size: 1.5rem;
+    }
+}
+@media (min-width: 900px) {
+    .pricing{
+        overflow-x: hidden;
+        display: flex;
+        justify-content: center;
+        min-width: 900px;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container-header img{
+        margin-right: 30vw;
+    }
+    .container-nav a{
+        font-size: 1.7rem;
+    }    
+
+    main h1{
+        font-size: 3.5rem;
+    }
+    .container-form input[type="email"]{
+        font-size: 1.7rem;
+    }
+    .container-form input[type="submit"]{
+        font-size: 1.7rem;
+    }
+
+    .fa-fire:before, .fa-truck:before, .fa-battery-full:before{
+        font-size: 5rem;
+    }
+
+    .features-description h3{
+        font-size: 2.2rem;
+        
+       
+    }
+    .features-description p{
+        font-size: 1.8rem;
+    }
+
+    section div.features{
+        margin-bottom: 80px;
+    }
+
+    .container-feateures, .container-video, .pricing{
+        margin-top: 60px;
+    }
+
+    .pricing{
+        min-width: 900px;
+        max-width: 1000px;
+
+    }
+    .container-card h4{
+        font-size: 1.6rem;
+    }
+    .container-card p{
+        font-size: 2.2rem;
+    }
+    .container-card ul{
+        font-size: 1.5rem;
+    }
+    .container-card button{
+        font-size: 1.6rem;
+    }
+    .container-footer li a{
+        font-size: 1.5rem;
+    }
+    .container-footer p{
+        font-size: 1.6rem;
     }
 }
